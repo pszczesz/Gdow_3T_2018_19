@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ćwiczenie 1</title>
+</head>
+<body>
+	<h1>Ćwiczenie 1</h1>
+	<script type="text/javascript">
+		let imie = prompt("Podaj swoje imię:");
+		let du = prompt("Podaj datę urodzenia:");
+		let dataUrodz = new Date(du);
+		console.log(dataUrodz);
+		let data = new Date();
+		document.write("Witaj: "+imie
+			+" Dzisiaj jest: " + data.toLocaleDateString()
+			+" mamy czas: "+data.toLocaleTimeString()+"<br>");
+		document.write("Twój wiek: "
+			+(data.getFullYear()-dataUrodz.getFullYear()));
+		document.write("Ilość sekund: "
+			+(data-dataUrodz)/(1000*3600)+"h");
+	</script>
+</body>
+</html>

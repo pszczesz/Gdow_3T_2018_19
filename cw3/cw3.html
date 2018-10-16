@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ćwiczenie 3</title>
+        <meta charset="UTF-8">        
+    </head>  
+    <body>
+        <h1>Ćwiczenie 3</h1>   
+        <h2>Pętla for( ; ; )</h2>
+        <script type="text/javascript">
+            for(let i=1; i<=6; i++){
+                document.write("<h"+i+">Nagłówek nr: "
+                        +i+"</h"+i+">");
+            }            
+        </script>
+        <h2>Pętla do{...}while(...)</h2>
+        <script type="text/javascript">
+            let suma = 0;
+            do{
+                let losowa = Math.floor(Math.random()*20);
+                suma += losowa; // suma = suma + losowa;
+                let znak = suma<100 ? " + ": " = ";
+                document.write(losowa+znak);
+            }while(suma<100);
+            document.write(suma+"<br>");
+            //let liczba;
+            do{
+                var liczba = Math.floor(Math.random()*20);
+                document.write(liczba+"<sup>2</sup> = "+ (liczba * liczba)+"<br>");
+            }while(liczba*liczba<360);
+        </script>
+    </body>
+</html>

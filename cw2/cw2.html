@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ćwiczenie 2</title>
+</head>
+<body>
+	<h1>Ćwiczenie 2</h1>
+	<script type="text/javascript">
+		let a = parseInt(prompt("Podaj a",12));
+		let b = parseInt(prompt("Podaj b",-5));
+		if (!isNaN(a) && !isNaN(b)) {
+			document.write("<p>"+a+" + "+b+" = "
+				+(a+b)+"</p>");
+			document.write("<p>"+a+" - "+b+" = "
+				+(a-b)+"</p>");
+			document.write("<p>"+a+" * "+b+" = "
+				+(a*b)+"</p>");
+			let wynik = b!=0 ? (a/b).toFixed(2) :
+			 "Nie dzielimy przez ZERO";
+			document.write("<p>"+a+" / "+b+" = "
+				+wynik+"</p>");
+		}else{
+			document.write("<p>Błędne dane</p>");
+		}
+	</script>
+</body>
+</html>
