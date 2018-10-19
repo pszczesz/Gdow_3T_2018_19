@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    color: green;
+    border-bottom: solid 1px limegreen;
+}
+
+p{
+    margin: 20px;
+    cursor: pointer;
+}
