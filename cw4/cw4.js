@@ -13,7 +13,9 @@ function start(){
 function klik(){
     if(this.style.backgroundColor == "red"){
         this.style.backgroundColor = "white";
+        this.style.border = "";
     }else{
         this.style.backgroundColor = "red";
+        this.style.border = "solid 1px #C72688";
     }
 }
