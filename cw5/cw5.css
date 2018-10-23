@@ -1,0 +1,18 @@
+
+h1{
+    text-align: center;
+    border-bottom: solid 1px green;
+    margin-bottom: 30px;
+}
+label{
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    padding-right: 5px;
+}
+#sprawdz{
+    margin-left: 150px;
+    padding: 5px;
+    width: 140px;
+}
+div{    margin: 20px;}
