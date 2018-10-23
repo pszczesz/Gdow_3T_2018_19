@@ -7,7 +7,23 @@ function start(){
     
     function klik(){
         licznik++;
-        alert(licznik);
+        let liczba = parseInt(document.querySelector("#liczba").value);
+        let wynik = document.querySelector("#wynik");
+        if(isNaN(liczba)){
+            wynik.style.color = "red";
+            wynik.innerHTML = "Błędna liczba!!!";
+        }else{
+            if(liczba>secret){
+                wynik.style.color = "blue";
+                wynik.innerHTML = "Liczba za duża. Ilośc prób: "+licznik;
+            }else if(liczba<secret){
+                wynik.style.color = "lightblue";
+                wynik.innerHTML = "Liczba za mała. Ilośc prób: "+licznik;
+            }else{
+                wynik.style.color = "green";
+                wynik.innerHTML = "Zgadłeś!!! Ilośc prób: "+licznik;
+            }
+        }
     }
 }
 
