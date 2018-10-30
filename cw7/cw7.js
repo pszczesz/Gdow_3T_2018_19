@@ -18,6 +18,7 @@ function klik(){
 }
 function klikKolo(){
     document.querySelector("#scena").innerHTML = htmlKolo();
+    
 }
 function klikProstokat(){
     document.querySelector("#scena").innerHTML = htmlProstokat();
