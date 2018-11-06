@@ -17,14 +17,34 @@ function klik(){
     }
 }
 function klikKolo(){
-    document.querySelector("#scena").innerHTML = htmlKolo();
-    
+    document.querySelector("#scena").innerHTML = htmlKolo();  
+    let bKolo = document.querySelector("#obliczKolo");
+    //toDo
 }
 function klikProstokat(){
     document.querySelector("#scena").innerHTML = htmlProstokat();
+    let bProstokat = document.querySelector("#obliczProstokat");
+    bProstokat.onclick = function (){
+        let a = parseFloat(document.querySelector("#aProstokat").value);
+        let b = parseFloat(document.querySelector("#bProstokat").value);
+        document.querySelector("#wynikProstokat")
+                .innerHTML = "Pole prostokąta wynosi: "+(a*b);
+    };
+    
 }
 function klikKwadrat(){
     document.querySelector("#scena").innerHTML = htmlKwadrat();
+     let bKwadrat = document.querySelector("#obliczKwadrat");
+     bKwadrat.onclick = function () {
+        let a = parseFloat(document.querySelector("#aKwadrat").value);
+        if(!isNaN(a) && a>=0){
+            document.querySelector("#wynikKwadrat")
+                    .innerHTML = "Pole kwadratu: "+(a*a);
+        }else{
+             document.querySelector("#wynikKwadrat")
+                    .innerHTML = "Błędne dane";
+        }
+    };
 }
 function htmlKolo(){
     let html = "<label for='rKolo'>Podaj promień:</label>"
