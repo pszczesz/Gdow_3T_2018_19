@@ -1,0 +1,21 @@
+#start{
+    margin-left: 50px;
+    padding: 8px;
+    width: 200px;
+    font-size: 2em;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+}
+td{
+    width: 18px;
+    height: 18px;
+    border: solid 1px black;
+    padding: 0;
+    cursor: pointer;
+}
+img{
+    margin: 0;
+}
