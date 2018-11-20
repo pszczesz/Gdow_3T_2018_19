@@ -1,0 +1,57 @@
+h1{
+    margin: auto;
+    text-align: center;
+    border-bottom: solid 1px grey;
+    width: 60%;
+    margin-bottom: 30px;
+}
+#time{
+    font-size: 3em;
+    color: #6666ff;
+    text-align: right;
+    margin-right: 100px;
+    font-weight: bold;
+}
+#kartka{
+    margin-left: 150px;
+    width: 300px;
+    height: 400px;
+    border: solid 2px #6666ff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px grey;
+    animation-name: pokaz;
+    animation-duration: 3s;
+    background-color: bisque;
+}
+#miesiac{
+    color: black;
+    font-size: 1.6em;
+    margin-top: 50px;
+}
+#data{
+    color: black;
+    font-size: 8em;
+    margin-top: 20px;
+    font-weight: bold;
+}
+@keyframes pokaz {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+#dzien{
+    font-size: 2.2em;
+    color: black;
+    margin-top: 10px;
+}
+#rok{
+    font-size: 2em;
+    color: blue;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+
+
