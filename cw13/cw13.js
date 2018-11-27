@@ -21,7 +21,7 @@ function genTab(dane){
         for(let j=0;j<dane[i].length;j++){           
            html += "<td>"+dane[i][j]+"</td>"; 
         }
-        html += "</tr>"
+        html += "</tr>";
     }
     return html +"</table>";
 }
