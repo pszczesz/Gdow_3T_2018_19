@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cwiczenie 15</title>
+        <meta charset="UTF-8">  
+        <style>
+            span#ilosc{ color: green; font-weight: bold;}
+            div#opis{margin-top: 30px; margin-bottom: 5px;}
+            ol{border: solid grey 1px;padding: 30px;}
+        </style>
+    </head>
+    <body>
+        <h1>Prezenty świąteczne</h1>
+        <div>
+            <label for="prezent">Prezent</label>
+            <input type="text" id="prezent"/>
+            <input type="button" id="dodaj" value="Dodaj"/>
+            <input type="button" id="usun" value="Usuń"/>   
+            <input type="number" id="index" min="0" value="0" />
+        </div>
+        <div id="opis">Lista prezentów <span id="ilosc">Ilość prezentów: 2</span></div>
+        <ol id="lista">
+            <li>Miś pluszowy - 200zł</li>  
+            <li>Samochód na resorach - 120zł</li>
+        </ol>
+        <script type="text/javascript" src="cw15.js"></script>
+    </body>
+</html>
