@@ -12,8 +12,10 @@ h1{
 input[type="button"]{
     height: 400px;
     width: 40px;
-    vertical-align: bottom;
+    vertical-align: top;
     margin: 0;
+    background-color: #cccc00;
+    border: solid 1px #666600;
 }
 #obrazek{
     border: solid grey 1px;
