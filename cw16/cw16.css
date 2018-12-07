@@ -1,0 +1,28 @@
+h1{
+    margin: auto;
+    text-align: center;
+    border-bottom: solid green 1px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+#scena{
+    text-align: center;
+    margin: auto;
+}
+input[type="button"]{
+    height: 400px;
+    width: 40px;
+    vertical-align: bottom;
+    margin: 0;
+}
+#obrazek{
+    border: solid grey 1px;
+    margin: 0;
+}
+#podpis{
+    margin: auto;
+    text-align: center;
+    color: #6666ff;
+    font-size: 2em;
+}
+
