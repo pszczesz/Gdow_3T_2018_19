@@ -1,0 +1,22 @@
+#baner{
+    height: 300px;
+    width: 1000px;
+    border: solid 1px #6666ff;
+    background-color: #ccccff;
+    margin: auto;
+    text-align: center;
+}
+#napis{
+    display: inline-block;
+    width: 70%;
+    color: #6600ff;
+    font-size: 100px;
+    font-weight: bolder;
+    padding-top: 70px;
+}
+#obrazek{
+    height: 200px;
+    width: 100px;
+    border: solid 1px #6666ff;
+    margin-top: 40px; 
+}
