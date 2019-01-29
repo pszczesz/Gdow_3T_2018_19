@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ćwiczenie 22</title>
+        <meta charset="UTF-8"> 
+        <style>
+            span.pod{
+                text-decoration: underline;
+                font-weight: bold;
+                color: green;
+                display: inline-block;
+                width: 140px;
+                text-align: right;
+            }
+           img{vertical-align: middle;}
+        </style>
+    </head>
+    <body>
+        <h1>Ćwiczenie 22</h1>
+        Czy pokazać zasady hasła: <input type="checkbox" id="pokaz"/>
+        <ul>
+            <li><span class='pod'>Hasło bardzo silne:</span> 7 znaków lub więcej 
+                zawiera conajmniej 2 cyfrę i duża literę</li>
+            <li><span class='pod'>Hasło silne:</span> 7 znaków lub więcej zawiera 
+                conajmniej 1 cyfrę</li>
+            <li><span class='pod'>Hasło średnie:</span> 7 znaków lub więcej, brak cyfr </li>
+            <li><span class='pod'>Hasło słabe:</span> mniej niż 7 znaków </li>
+        </ul>
+        <div>
+            <label for="password">Podaj hasło: </label>
+            <input type="password" id="password"
+                   placeholder="wstaw hasło" />
+            <input type="button" value="Sprawdź" id="sprawdz"/>
+            <span></span>
+        </div>
+        <button><img src="arrayR.png" alt="strzałka"/><span id="btn1">Do przodu</span></button>
+        <script type="text/javascript" src="cw22.js"></script>
+    </body>
+</html>
