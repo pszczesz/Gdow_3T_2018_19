@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ćwiczenie 24 - Tabelki</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cw24.css"/>
+    </head>
+    <body>
+        <h1>Uczestnicy wycieczki</h1>
+        <table id="tab">
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Kwota</th>
+                <th>Operacje</th>
+            </tr>            
+        </table>
+        <div>
+            <label for="imie">Imię</label>
+            <input type="text" id="imie"/>
+            <span class="error"></span><br>
+            
+            <label for="nazwisko">Nazwisko</label>
+            <input type="text" id="nazwisko"/>
+            <span class="error"></span><br>
+            
+            <label for="kwota">Kwota</label>
+            <input type="text" id="kwota"/>
+            <span class="error"></span><br>
+            <input type="button" id="add" value="Dodaj uczestnika"/>
+        </div>
+        <script type="text/javascript" src="cw24.js"></script>
+    </body>
+</html>

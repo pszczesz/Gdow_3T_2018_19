@@ -1,0 +1,28 @@
+label{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+input#add{
+    padding: 8px;
+    width: 150px;
+    margin-left: 160px;
+}
+table{
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+th,td{
+    border: solid 1px black;
+    padding: 5px;
+}
+th{color: #cccc00; background-color:#663300;}
+td{color: #663300;}
+div{margin: 20px;}
+.error{
+    color: red;
+}
