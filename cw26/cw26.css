@@ -1,0 +1,40 @@
+#baner{
+    width: 90%;
+    border: solid 2px #663300;
+    background-color: #996600;
+    color: #663300;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 25px;
+    height: 80px;    
+    text-align: center;
+}
+#lewy{
+    float: left; 
+    height: 300px; 
+    background-color: #996600; 
+    width: 120px;
+}
+ul{    
+   list-style: none;  
+   padding: 0;
+}
+ul li input{
+    width: 100px;
+    background-color: #330000;
+    color: #ffcccc;
+    border: solid 2px black;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+#prawy{
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+table{border-collapse: collapse;}
+td{border: solid 1px grey; padding: 5px;text-align: center;}
+.wylosowane{
+    background-color: red;
+}
+
