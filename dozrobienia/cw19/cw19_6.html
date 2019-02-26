@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sortowanie</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<div id="wynik1"></div>
+<div>
+	<input type="button" name="sort" id="sort"
+	 value="Sortuj">
+</div>
+<div id="wynik2"></div>
+<script type="text/javascript">
+	window.onload = start;
+	var liczby = [];
+	for(var i=0;i<20;i++){
+		liczby.push(Math.floor(Math.random()*100));
+	}
+	function start(){
+		document.getElementById("wynik1").innerHTML = liczby;
+		document.getElementById("sort").onclick = sort;
+	}
+	function sort(){
+		document.getElementById("wynik2")
+		        .innerHTML = liczby.sort(function(a,b){return a-b;});
+	}
+</script>
+</body>
+</html>

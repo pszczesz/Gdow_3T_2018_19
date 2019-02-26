@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            div#baner{height: 100px; background-color: gray; font-size: 4em; text-align: center; padding: 30px;}
+            div#menu{margin: 0px; padding: 0px;}
+            div#menu ul{margin: 0px; list-style: none; padding: 0px;}
+            div#menu ul>li{
+                display: inline-block; width: 31.92%;
+                margin: -2px;
+                text-align: center;
+                background-color: #999999;
+                padding: 0px;
+                border: solid 1px black;
+                cursor: pointer;
+                vertical-align: top;
+            }
+            ul.pod1{
+                margin: 0px;
+                padding: 0px;
+                display: none;
+                text-align: center;
+                
+            }
+            div#menu>ul>li:hover>ul{
+                display: block;
+            }
+            ul.pod1 li{
+                display: block !important;                            
+               
+                border: none!important;
+                width: 100%!important;
+            }
+            ul.pod1 li:hover{
+                background-color: #333333 !important;
+                width: 80%;
+                color: white;
+            }
+            ul.pod1 li a{
+                text-decoration: none;
+                 color: black;
+                 display: inline-block;
+            }
+            ul.pod1 li a:hover{
+                 
+                 color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="baner">
+            MOJA FIRMA 2017
+        </div>
+        <div id="menu">
+            <ul>
+                <li>Home
+                    <ul class="pod1">
+                        <li>element 1</li>
+                        <li>element 2</li>
+                        <li>element 3</li>
+                    </ul>
+                </li>
+                <li>Informacje o firmie</li>
+                <li>Kotakt
+                <ul class="pod1">
+                        <li>element 1</li>
+                        <li>element 2</li>
+                        <li><a href="http://onet.pl" target="_blank">element 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

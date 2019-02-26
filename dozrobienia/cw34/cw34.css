@@ -1,0 +1,20 @@
+#nag{
+    padding: 20px;
+    font-size: 3em;
+    color: #ff9900;
+    text-align: center;
+}
+
+#obrazek{
+    vertical-align: text-top;
+    margin: 10px;
+    border: solid 1px grey;
+}
+div.line{
+    margin: 10px;
+}
+label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}

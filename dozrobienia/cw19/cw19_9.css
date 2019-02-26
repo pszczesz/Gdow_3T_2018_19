@@ -1,0 +1,22 @@
+div.line{
+    margin: 10px;
+}
+#lewy{
+    float: left;
+    width: 50%;
+}
+#content{
+    float: left;
+    width: 45%;
+}
+#dolne{
+    clear: both;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 40%; 
+}
+input#oblicz{
+    width: 200px;
+    padding: 10px;
+}

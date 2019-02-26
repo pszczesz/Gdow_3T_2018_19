@@ -1,0 +1,69 @@
+body{ margin: 0; padding: 0;}
+#baner{ margin: 0; text-align: center;
+       background-color: #ff9900; color: #330000; font-size: 3em;
+ padding: 35px;}
+#menu ul{
+    list-style: none;
+    padding: 0; margin: 0;
+}
+#menu ul li{
+    float: left; width: 33.3%; margin: 0; padding: 0;
+    text-align: center;    
+}
+#menu ul li a{
+    display: inline-block; text-decoration: none; color: #330000;
+    background-color: #ffcc99;width: 100%;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+    padding: 6px;
+    background-color: #ffcc99;
+    width: 100%;
+}
+#prawy{display: inline-block;float: right; margin-right: 10px;}
+#lewy{display: inline-block;float: left;margin-left: 10px;}
+
+
+
+.show{   
+   position: fixed; right:0; top: 180px; height: 150px;   
+    width: 200px;background-color: #ff9900;
+    padding: 8px;
+    border: solid 2px #330000;
+    animation-name: pokaz;
+    animation-duration: 1s;
+}
+.zmiana{
+    position: fixed; right:0; top: 180px; height: 150px;
+    width: 200px;background-color: #ff9900;
+    padding: 8px;
+    border: solid 2px #330000;
+    animation-name: in;
+    animation-duration: 1s;    
+}
+.hide{   
+    position: fixed; right:-185px; top: 180px; height: 150px;
+    opacity: 0.2;
+    width: 200px;background-color: #ff9900;
+    padding: 8px;
+    border: solid 2px #330000;
+    animation-name: ukryj;
+    animation-duration: 2s;
+}
+@keyframes pokaz{
+    from{right:-185px;opacity:0.2;}
+    to{right:0;opacity:1;}
+}
+@keyframes ukryj{
+    from{right:0;opacity:1;}
+    to{right:-185px;opacity:0.2;}
+}
+@keyframes out{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@keyframes in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

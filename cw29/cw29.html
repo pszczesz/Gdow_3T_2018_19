@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ćwiczenie 29</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cw29.css"/>
+    </head>
+    <body>
+        <div id="lewy">
+            <div class="line">
+                <label for="polski">Język polski</label>
+                <input type="number" min="1" max="6" id="polski"/>
+                <span class="error"></span>
+            </div>
+            <div class="line">
+                <label for="matematyka">Matematyka</label>
+                <input type="number" min="1" max="6" id="matematyka"/>
+                <span class="error"></span>
+            </div>
+            <div class="line">
+                <label for="fizyka">Fizyka</label>
+                <input type="number" min="1" max="6" id="fizyka"/>
+                <span class="error"></span>
+            </div>
+            <div class="line">
+                <label for="angielski">Język angielski</label>
+                <input type="number" min="1" max="6" id="angielski"/>
+                <span class="error"></span>
+            </div>
+            <div class="line">
+                <label ></label>
+                <input type="button" id="oblicz" value="Oblicz"/>
+            </div>
+        </div>
+        <div id="wyb">
+            Średnia ocen<input type="radio" name="wybor" value="avg" checked=""/><br>
+            Najlepsza ocena<input type="radio" name="wybor" value="max"/><br>
+            Najgorsza ocena<input type="radio" name="wybor" value="min"/><br>
+        </div>
+        <div id="wynik"></div>
+        <script type="text/javascript" src="cw29.js"></script>
+    </body>
+</html>

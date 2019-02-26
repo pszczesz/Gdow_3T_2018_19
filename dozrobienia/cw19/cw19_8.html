@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Obrazek</div>
+        <input type="range" min="20" max="80" id="range"/><br>
+        <div id="wynik">Rozmiar obrazka: </div>
+        <div>
+            <img src="9qiIa.jpg" alt="obrazek" id="obrazek"/>
+        </div>
+        <script type="text/javascript">
+            window.onload = function (){
+                document.getElementById("obrazek").style.width = 
+                              document.getElementById("range").value+"%";
+                              document.getElementById("wynik").innerHTML 
+                                 = "Rozmiar obrazka: szerokość: "+document.getElementById("obrazek")
+                                 .offsetWidth+"px"
+                                    +" wysokość: "+document.getElementById("obrazek").offsetHeight+"px";
+                document.getElementById("range").onchange = function (){
+                    document.getElementById("obrazek").style.width = this.value+"%";
+                   document.getElementById("wynik").innerHTML 
+                                 = "Rozmiar obrazka: szerokość: "+document.getElementById("obrazek")
+                                 .offsetWidth+"px"
+                                    +" wysokość: "+document.getElementById("obrazek").offsetHeight+"px";
+                };
+            };
+        </script>
+    </body>
+</html>

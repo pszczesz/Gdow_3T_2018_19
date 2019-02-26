@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            Wybór koloru: <br>
+            R: <input type="range" min="0" max="255" value="255" id="r"/><br>
+            G: <input type="range" min="0" max="255" value="255" id="g"/><br>
+            B: <input type="range" min="0" max="255" value="255" id="b"/><br>
+            <div id="wynik"></div>
+        </div>
+        <script type="text/javascript" >
+            window.onload = start;
+            function start(){
+                document.getElementById("r").onchange = function(){
+                    document.getElementById("wynik").innerHTML = getColors(); 
+                };
+                document.getElementById("g").onchange = function(){
+                    document.getElementById("wynik").innerHTML = getColors(); 
+                };
+                document.getElementById("b").onchange = function(){
+                    document.getElementById("wynik").innerHTML = getColors(); 
+                };
+            }
+            function getColors(){
+                var r = parseInt(document.getElementById("r").value);
+                var g = parseInt(document.getElementById("g").value);
+                var b = parseInt(document.getElementById("b").value);
+                if(!isNaN(r) && !isNaN(g) && !isNaN(b)){
+                    document.body.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+                    return "rgb("+r+","+g+","+b+")";                    
+                }else{
+                   return "BŁĄD!!"; 
+                }
+            }
+        </script>
+    </body>
+</html>

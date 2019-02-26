@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    text-align: center;    
+}
+a{margin: 0; padding: 0;}
+#wrapper{
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    width: 1000px;
+}
+#baner{    margin: 0;}
+img{    margin: 0;}
+#lewy, #prawy, #main{   
+    border: solid 1px black;
+    text-align: left;
+    padding: 5px;
+    height: 480px;
+    margin: 0;
+    float: left;
+}
+#lewy, #prawy{    width: 30%;}
+
+#main{    width: 36%;}
+#stopka{
+    text-align: right;
+    padding: 10px;   
+    clear: both;
+    height: 40px;
+    border: solid 1px black;
+}
+#wzorzec, #kopia{
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #B3C6D9;
+    padding: 20px;
+}
+

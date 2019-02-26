@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Menu poziome</title>
+        <meta charset="UTF-8">
+        <style>
+            #baner{width: 100%; padding: 20px;font-size: 4em;background-color: grey;text-align: center;}
+           
+      /* ------------------------CZĘŚĆ-GÓRNA-MENU------------------------ */
+
+      /* wygląd głównego elementu - ol */
+      ol {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        background-color:#FFF;
+        font-size:18px;
+        height:2em;
+        line-height:2em;
+        text-align:center;
+      }
+
+      /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+      ol a {
+        display:block;
+        text-decoration:none;
+        color:#000;
+        padding:0 5px;
+      }
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol */
+      ol > li {
+        float:left;
+        width:25%;
+        /*margin-left:1px;*/
+        background-color:#FDD700;
+        height:2em;
+      }
+
+      /* wygląd elementu - li - pierwszego dziecka elementu - ol */
+      ol > li:first-child {
+        margin-left:0;
+      }
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover {
+        background-color:#EEE;
+      }
+
+      /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover > a {
+        color:#09C;
+      }
+
+      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover > ul {
+        display:block;
+      }
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU------------------------ */
+
+      /* wygląd głównych rozwijanych elementów - ul */
+      ol > li > ul {
+        display:none;
+        list-style-type:none;
+        padding:0;
+        margin:0;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej */
+      ol > li > ul > li {
+        position:relative;
+        background-color:#EEE;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej */
+      ol > li > ul > li > a {
+        border-top:1px solid #FFF;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+      ol > li > ul > li:hover {
+        background-color:#DDD;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+      ol > li > ul > li:hover > a {
+        color:#09C;
+      }
+       #menu{margin: auto;text-align: center;}
+        </style>
+    </head>
+    <body>
+        <div id="baner">Ćwiczenie Menu poziome</div>
+        <div id="menu">
+            <ol>
+    <li><a href="#">dział - 1</a>
+      <ul>
+        <li><a href="#">link - 1</a></li>
+        <li><a href="#">link - 2</a></li>
+        <li><a href="#">link - 3</a></li>
+        <li><a href="#">link - 4</a></li>
+        <li><a href="#">link - 5</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#">dział - 2</a>
+      <ul>
+        <li><a href="#">link - 1</a></li>
+        <li><a href="#">link - 2</a></li>
+        <li><a href="#">link - 3</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#">dział - 3</a></li>
+
+    <li><a href="#">dział - 4</a>
+      <ul>
+        <li><a href="#">link - 1</a></li>
+        <li><a href="#">link - 2</a></li>
+        <li><a href="#">link - 3</a></li>
+        <li><a href="#">link - 4</a></li>
+      </ul>
+    </li>
+  </ol>
+        </div>
+    </body>
+</html>

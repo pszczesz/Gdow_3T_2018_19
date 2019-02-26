@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Listy numerowane</title>
+        <meta charset="UTF-8">
+        <style>
+            ol#glowna{margin-bottom: 20px;}
+            ol#glowna li{margin-bottom: 10px;font-weight: bold;}
+            ol#pod1>li>ol{display: none}
+            ol#pod1>li:hover>ol{display: block;}
+            ol#pod1{margin-bottom: 10px;}
+            ol#pod1 li{margin-bottom: 5px;font-weight: normal;}
+            ol#pod2 li{padding-left: 10px;}
+            div#gl>p{color: red;}
+        </style>
+    </head>
+    <body>
+        <div>Listy numerowane</div>
+        <ol id="glowna" type="I" >
+            <li>Element 1 list głównej</li>            
+            <li>Element 2 list głównej</li>
+            <li>Element 3 list głównej
+                <ol id="pod1" type="1">
+                    <li>Element 1 list pod1</li>
+                    <li>Element 2 list pod2</li>
+                    <li>Element 3 list pod2
+                        <ol id="pod2" type="a">
+                            <li>Element 1 list pod2</li>
+                            <li>Element 2 list pod2</li>
+                            <li>Element 3 list pod2
+                                <ul style="list-style: square">
+                                    <li>Element 1 list pod3</li>
+                                    <li>Element 2 list pod3</li>
+                                </ul>
+                            </li>
+                            <li>Element 4 list pod2</li>
+                        </ol>
+                    </li>
+                    <li>Element 4 list pod1</li>
+                </ol>
+            </li>
+            <li>Element 4 list głównej</li>
+        </ol>
+
+        <div id="gl">
+            <p>Glowny</p>
+            <div>
+                <p>podrzedny</p>
+                <p>podrzedny</p>
+            </div>
+        </div>
+    </body>
+</html>
