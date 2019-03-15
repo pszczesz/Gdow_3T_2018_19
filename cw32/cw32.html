@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ćwiczenie 32 - obiekty</title>
+        <meta charset="UTF-8">   
+        <style>
+            label{display: inline-block; width: 100px; text-align: right;}
+            input{width: 180px;}
+            .line{margin: 20px 10px;}
+        </style>
+    </head>
+    <body>
+        <div>Ćwiczenie 32 - obiekty</div>
+        <form>
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                <div class="line">
+                    <label for="imie">Imię</label>
+                    <input type="text" placeholder="podaj imię" id="imie"/>
+                </div>
+                <div class="line">
+                    <label for="nazwisko">Nazwisko</label>
+                    <input type="text" placeholder="podaj nazwisko" id="nazwisko"/>
+                </div>
+                <div class="line">
+                    <label for="wiek">Wiek</label>
+                    <input type="text" placeholder="podaj wiek" id="wiek"/>
+                </div>
+                <div>
+                    <input type="button" id="zapisz" value="Zapisz"/>
+                </div>
+            </fieldset>
+        </form>
+        <div id="wynik"></div>
+        <script type="text/javascript" src="cw32.js"></script>
+    </body>
+</html>
