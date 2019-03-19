@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ćwiczenie 33 - Liczba PI</title>
+        <meta charset="UTF-8"> 
+        <style>
+            h1{text-align: center;}
+            #wynik{text-align: center; color: blue;font-size: 5em;}
+        </style>
+    </head>
+    <body>
+        <h1>Generowanie liczby PI</h1>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Liczba PI</legend>
+                    <div>
+                        <label for="ile">Ilość powtórzeń</label>
+                        <input type="number" min="100" max="10000000" id="ile"/>
+                        <input type="button" id="gener" value="Generuj liczbę PI"/>
+                    </div>
+                </fieldset>
+            </form>
+            <div id="wynik"></div>
+        </div>
+        <script type="text/javascript" src="cw33.js"></script>
+    </body>
+</html>
