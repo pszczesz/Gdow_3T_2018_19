@@ -1,0 +1,24 @@
+#lewy{
+    float: left;
+    width: 40%;
+    background-color: lightcoral;
+    height: 600px;
+}
+#prawy{
+    float: left;
+    height: 600px;
+}
+#stopka{
+    background-color: black;
+    color:white;
+    text-align: right;
+    clear: both;
+}
+table{
+    border-collapse: collapse;
+    width: 40%;
+}
+td{
+    border: solid brown 1px;
+    padding: 10px;
+}
