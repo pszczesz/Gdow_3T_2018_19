@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">       
+        <style>           
+            div{margin: 20px;}
+            #kw,#ko{cursor: pointer;}           
+        </style>
+    </head>
+    <body>
+        <div>Egzamin 3</div>
+        <div>
+            <span id="kw">KWADRAT, </span><span id="ko">KOŁO</span> <br>
+            <img id="kwadrat" src="kwadrat.png" alt="" />            
+            <img id="kolo" src="kolo.png" alt=""/>          
+        </div>
+        <script type="text/javascript">
+            window.onload = function (){
+              let kwadrat = document.querySelector("#kwadrat");
+              let kolo = document.querySelector("#kolo");
+              kwadrat.style.display = "none";
+              kolo.style.display = "none";
+              document.querySelector("#kw").onmouseenter = function (){
+                  kwadrat.style.display = "inline-block";
+              };
+              document.querySelector("#kw").onmouseleave = function (){
+                  kwadrat.style.display = "none";
+              };
+              document.querySelector("#ko").onmouseenter = function (){
+                  kolo.style.display = "inline-block";
+              };
+              document.querySelector("#ko").onmouseleave = function (){
+                  kolo.style.display = "none";
+              };
+            };    
+        </script>
+    </body>
+
+</html>
