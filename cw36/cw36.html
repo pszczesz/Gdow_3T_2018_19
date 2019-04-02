@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ćwiczenie 36 - kolory</title>
+        <meta charset="UTF-8">   
+        <style>
+            #scena{float: left;  width: 300px;height: 300px;
+            border: black 2px solid;}
+            #prawy{float: left; width: 600px; margin-left: 30px;               
+            }
+            label{display: inline-block; width: 100px;text-align: right;
+            margin-right: 10px;}
+        </style>
+    </head>
+    <body>
+        <h1>Ćwiczenie 36 - kolory</h1>
+        <div id="scena"></div>
+        <div id="prawy">
+            <label for="red">Czerwony:</label>
+            <input type="range" id="red" value="100" min="0" max="255"/><br>
+            <label for="green">Zielony:</label>
+            <input type="range" id="green" value="100" min="0" max="255"/><br>
+            <label for="blue">Niebieski:</label>
+            <input type="range" id="blue" value="100" min="0" max="255"/><br>
+        </div>
+        <script type="text/javascript" src="cw36.js"></script>
+    </body>
+</html>
