@@ -1,0 +1,53 @@
+.line{
+    margin: 10px;
+}
+.error{
+    color: red;
+}
+label{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 5px;
+}
+input[type="button"]{
+    margin-left: 210px;
+    width: 165px;
+    padding: 5px;
+    border-radius: 5px;
+}
+fieldset{
+    border-radius: 10px;
+    background-color: #FDD700;
+    box-shadow: 5px 5px #888888;
+    width: 90%;    
+    border-color: #999900;
+}
+select{
+    width: 60px;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    padding: 10px;
+}
+#wynik{
+    margin: 20px;
+    clear: both;
+}
+#lewy{
+    float: left;
+    width: 59%;
+}
+#prawy{
+    float: left;
+    width: 39%;
+}
+h3.header{
+    padding: 10px;
+    background-color: #999900;
+    cursor: pointer;
+}
+
+

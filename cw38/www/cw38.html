@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ćwiczenie 38 - Praktyki</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/cw38.css"/>
+    </head>
+    <body>
+        <h1>Praktyki 2019 - maj</h1>
+        <div id="lewy">
+        <form>
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                <div class="line">
+                    <label for="imie">Imię: </label>
+                    <input type="text" id="imie" name="imie"/>
+                    <span class="error"></span>
+                </div>
+                <div class="line">
+                    <label for="nazwisko">Nazwisko: </label>
+                    <input type="text" id="nazwisko" name="nazwisko"/>
+                    <span class="error"></span>
+                </div>
+                <div class="line">
+                    <label for="ocena">Ocena: </label>
+                    <select name="ocena" id="ocena">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="line">
+                    <input type="button" id="zapisz" value="Zapisz"/>
+                </div>
+            </fieldset>
+        </form>
+        </div>
+        <div id="prawy">
+            <h3 class="header">zakupy</h3>
+            <ol>
+                <li>Chleb 2.45</li>
+                <li>Mąka 2.99</li>
+                <li>Herbata 4.69</li>
+            </ol>
+            <h3 class="header">Filmy</h3>
+            <ul>
+                <li>Rambo 3</li>
+                <li>Rambo 4</li>
+                <li>Rambo 5</li>
+                <li>Rambo 6</li>
+            </ul>
+        </div>
+        <div id="wynik"></div>
+        <div id="footer">Wykonano: <span id="rok"></span> &#169; Grererer Rsdsdsds</div>
+        <script type="text/javascript" src="../js/jquery-3.4.0.js"></script>
+        <script type="text/javascript" src="../js/cw38.js"></script>
+    </body>
+</html>
