@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+div#scene{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border: solid 1px black;
+}
+div#object{
+    position: relative;
+    margin: 2px;
+    height: 45px;
+    width: 45px;
+    background-color: grey;
+}
+#panel{
+    position: fixed;
+    right:-240px;
+    top: 100px;
+    height: 250px;
+    width: 250px;
+    background-color: #99cc00;
+    padding: 10px;  
+}
